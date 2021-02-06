@@ -3,7 +3,7 @@ import Home from './components/Home/Home';
 import { Provider } from 'react-redux';
 import { store } from './redux/store/index';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Provider store={store}>
       <BrowserRouter>
@@ -13,6 +13,6 @@ function App() {
       </BrowserRouter>
     </Provider>
   );
-}
+};
 
 export default App;
